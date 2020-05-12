@@ -1,8 +1,14 @@
 #root {
-  // position: relative;
-  width: 100vw;
-  height: auto;
-  // overflow: auto;
+  width: 100%;
+  height: 100%;
+  // position: absolute;
+  overflow: auto;
+    background-size:cover;
+    background-position:center;
+    // background: url('https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg') no-repeat;
+    background: url('https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/BBC19066-E176-47C2-9D22-48C81EE5DF6B.jpeg') no-repeat;
+
+    
 }
 
 img {
@@ -10,12 +16,13 @@ img {
 }
 
 body {
-  width: 100vw;
+  // position: absolute;
+  width: 100%;
   height: 100%;
-  // overflow-y: auto;
-  overflow-x: hidden;
-
   cursor: url(https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur), default;
+  // overflow: auto;
+  // overflow: hidden !important;
+  overflow-y: scroll;
 }
 
 a {
@@ -23,16 +30,13 @@ a {
 }
 
 html {
-  width: 100vw;
-  height: 100%;
+
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
-  word-spacing: 1px;
+  // word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
 }
 
 .dfcc {
@@ -60,13 +64,13 @@ html {
 //     height: 400px;
 // }
 
-body::-webkit-scrollbar {
-  /*滚动条整体部分，其中的属性有width,height,background,border等（就和一个块级元素一样）（位置1）*/
-  width: 6px;
-  height: 10px;
-  border-radius: 6px;
-  overflow: hidden;
-}
+// body::-webkit-scrollbar {
+//   /*滚动条整体部分，其中的属性有width,height,background,border等（就和一个块级元素一样）（位置1）*/
+//   width: 6px;
+//   height: 10px;
+//   border-radius: 6px;
+
+// }
 
 body::-webkit-scrollbar-button {
   /*滚动条两端的按钮，可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果（位置2）*/
@@ -76,9 +80,7 @@ body::-webkit-scrollbar-button {
 
 body::-webkit-scrollbar-track {
   /*外层轨道，可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果（位置3）*/
-  // background: #999;
   display: none;
-
 }
 
 body::-webkit-scrollbar-track-piece {
@@ -87,59 +89,13 @@ body::-webkit-scrollbar-track-piece {
   display: none;
 }
 
-body::-webkit-scrollbar-thumb {
-  /*滚动条里面可以拖动的那部分（位置5）*/
-  background: #666;
-  border-radius: 4px;
-}
-
-body::-webkit-scrollbar-corner {
-  /*边角（位置6）*/
-  background: #82AFFF;
-}
-
-body::-webkit-scrollbar-resizer {
-  /*定义右下角拖动块的样式（位置7）*/
-  background: #FF0BEE;
-}
 
 body {
-  scrollbar-arrow-color: #f4ae21;
-  /**/
-  /*三角箭头的颜色*/
-  scrollbar-face-color: #FF0BEE;
-  /**/
-  /*立体滚动条的颜色*/
-  scrollbar-3dlight-color: #666;
-  /**/
-  /*立体滚动条亮边的颜色*/
-  scrollbar-highlight-color: #666;
-  /**/
-  /*滚动条空白部分的颜色*/
-  scrollbar-shadow-color: #999;
-  /**/
-  /*立体滚动条阴影的颜色*/
-  scrollbar-darkshadow-color: #666;
-  /**/
-  /*立体滚动条强阴影的颜色*/
-  scrollbar-track-color: #666;
-  /**/
-  /*立体滚动条背景颜色*/
-  scrollbar-base-color: #f8f8f8;
-  /**/
-  /*滚动条的基本颜色*/
-}
+  scrollbar-darkshadow-color: transparent;
 
-body {
-  scrollbar-width: 6px;
-  // -ms-scroll-chaining: chained;
-  // -ms-overflow-style: none;
-  // -ms-content-zooming: zoom;
-  // -ms-scroll-rails: none;
-  // -ms-content-zoom-limit-min: 100%;
-  // -ms-content-zoom-limit-max: 500%;
-  // -ms-scroll-snap-type: proximity;
-  // -ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
-  // -ms-overflow-style: none;
-  // overflow: auto;
+  scrollbar-face-color: transparent;
+
+  scrollbar-highlight-color: transparent;
+
+  scrollbar-base-color: transparent;
 }

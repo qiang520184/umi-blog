@@ -1,4 +1,4 @@
-import 'common/index.css';
+
 import { Button } from 'antd';
 export default () => <div>
     <div>

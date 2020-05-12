@@ -4,7 +4,7 @@ import { history } from 'umi';
 import { logoData, articleData, info } from 'config/user/index';
 import { Input } from 'antd';
 import 'common/style/global.less';
-import 'common/style/index.less';
+import '@/less/index.less';
 const { Search } = Input;
 function routerPush(item) {
 	history.push({
