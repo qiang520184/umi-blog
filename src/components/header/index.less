@@ -40,7 +40,7 @@
         width: 100%;
         height: 100%;
         position: relative;
-
+        z-index: 99;
         &>p {
           width: 100%;
           margin: 0;
@@ -91,7 +91,8 @@
           top: -28px;
           left: calc(50% - 16px);
           border: 14px solid transparent;
-          border-bottom-color: #fff;
+          border-bottom-color: red;
+          z-index: 999;
         }
 
       }
@@ -232,7 +233,6 @@
     width: 240px;
     // background: pink;
     padding-left: 16px;
-
     &>p {
       margin: 0;
       font-size: 20px;

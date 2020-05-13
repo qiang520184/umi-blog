@@ -2,7 +2,7 @@ import { useState } from 'react';
 import moment from 'moment';
 import { history } from 'umi';
 import { logoData, articleData, info } from 'config/user/index';
-import { Input } from 'antd';
+import { Input, Pagination } from 'antd';
 import 'common/style/global.less';
 import '@/less/index.less';
 const { Search } = Input;
@@ -22,7 +22,6 @@ export default () => {
 	return (
 		<div className="home">
 			<div className="main">
-				<div className="main-tip" />
 				{articleList && articleList.length ? (
 					<div className="article">
 						{articleList.map((item, index) => {
@@ -46,6 +45,9 @@ export default () => {
 								</div>
 							);
 						})}
+						<div>
+							<Pagination defaultCurrent={1} total={articleList.length} />
+						</div>
 					</div>
 				) : null}
 			</div>

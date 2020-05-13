@@ -5,7 +5,7 @@ export default (props) => {
     const [options, setOptions] = useState({ ...props })
     useEffect(() => {
         async function getData() {
-            let res = await axios.get('https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=2744509819&r=0.44551135745423176')
+            let res = await axios.get(`https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=2744509819&r=${new Date().getTime()}`)
             let audio = []
             res.data && res.data.forEach(item => {
                 audio.push({
