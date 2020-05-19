@@ -8,7 +8,6 @@ tags: ,
 keywords: ,
 photos: javascript,
 description: 
-</header>
 -->
 
 ### 分析一下promise吧

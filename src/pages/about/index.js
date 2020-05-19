@@ -12,5 +12,4 @@ export default () => <div>
     <div className="css">
       asdadadsahdahsdahdsh1
     </div>
-    <next></next>
     </div>

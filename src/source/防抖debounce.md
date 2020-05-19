@@ -7,7 +7,7 @@ photos: javascript,
 date: 2019-04-20 18:32:43,
 tags: ,
 keywords: ,
-description: 
+description: 防抖debounce,debounce
 -->
 
 ```js

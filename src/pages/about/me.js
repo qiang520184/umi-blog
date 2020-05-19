@@ -1,8 +1,5 @@
 
 export default () =>
   <div>
-    <Link href="/about">
-      <a>me</a>
-    </Link>
-    to about
+    <a href="https://mp.weixin.qq.com/s?__biz=MzI1Mjg4NzkwMg==&tempkey=MTA2MV9BQlNuY3pDOEZXc3pTUjNKM3MxYVoteVBEZ183bzRWN2VlZHJHVEFuQWFBVm1xVERmWkpEUDVkUWVKdmJKTmNVTGxUM0VWTFBMUGZtVHRUSnFSVlpEbjJhMThoUVhEV3oyUnlOWWdXSWlkcHFBU2hOSWVvVV9XaC0xQ0dKNFFMOHpyYkRxXzczcW9IUTZfRnh6Nk1fWlpxZ09XZlU4QkNWcXNETUZnfn4%3D&chksm=69dd97345eaa1e223820409dd0a047b378773846777d5b3e3933286cf60e90042429e41a2378#rd">跳转到微信公众号历史文章页</a>
   </div>

@@ -1,6 +1,7 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
+  // ssr: true,
   favicon: 'https://cdn.jsdelivr.net/gh/qiang520184/cdn@1.7.1/images/favicon.ico',
   nodeModulesTransform: {
     type: 'none',

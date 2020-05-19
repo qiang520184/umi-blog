@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import moment from 'moment';
 import { history } from 'umi';
-import { logoData, articleData, info } from 'config/user/index';
-import { Input, Pagination } from 'antd';
+import { Helmet } from 'react-helmet';
+import { articleData, info } from 'config/user/index';
+import { Pagination } from 'antd';
 import 'common/style/global.less';
 import '@/less/index.less';
-const { Search } = Input;
 function routerPush(item) {
 	history.push({
 		pathname: item.path,
 		query: {
-			title: item.title
+			title: encodeURI(item.title)
 		}
 	})
 }
@@ -21,6 +21,14 @@ export default () => {
 	const [articleList] = useState(articleData);
 	return (
 		<div className="home">
+			<Helmet>
+				<meta charSet="utf-8" />
+				<title>首页</title>
+				<meta name="description" content="付大强" />
+				<meta name="keywords" content="付大强" />
+
+				{/* <link rel="canonical" href="http://mysite.com/example" /> */}
+			</Helmet>
 			<div className="main">
 				{articleList && articleList.length ? (
 					<div className="article">
