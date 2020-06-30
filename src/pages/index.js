@@ -10,7 +10,7 @@ function routerPush(item) {
 	history.push({
 		pathname: item.path,
 		query: {
-			title: encodeURI(item.title)
+			id: encodeURI(item.date)
 		}
 	})
 }
