@@ -3,6 +3,7 @@ import { history } from 'umi';
 import { useEffect, useState } from 'react';
 import './index.less';
 import Markdown from 'components/markdown';
+import { articleData, info } from 'config/user/index';
 import { Helmet } from 'react-helmet';
 
 // import content from '../../source/git知多少.md';
@@ -13,10 +14,11 @@ import { Helmet } from 'react-helmet';
 export default () => {
   const [content, setContent] = useState('');
   const [info, setInfo] = useState({});
-
   useEffect(() => {
     // importContent(history.location.query.title);
-    let { title } = history.location.query;
+    let { id } = history.location.query;
+    let { title } = articleData.filter(e => +e.date === +id)[0]
+    console.log(id, articleData, title)
     const content = require(`../../source/${decodeURI(title)}.md`).default;
     setContent(content);
     let info = {};
