@@ -4,6 +4,8 @@ import { history } from 'umi';
 import { Helmet } from 'react-helmet';
 import { articleData, info } from 'config/user/index';
 import { Pagination } from 'antd';
+import seo from 'seo';
+
 import 'common/style/global.less';
 import '@/less/index.less';
 function routerPush(item) {
@@ -23,9 +25,9 @@ export default () => {
 		<div className="home">
 			<Helmet>
 				<meta charSet="utf-8" />
-				<title>首页</title>
-				<meta name="description" content="付大强" />
-				<meta name="keywords" content="付大强" />
+				<title>{seo.title}</title>
+				<meta name="description" content={seo.description} />
+				<meta name="keywords" content={seo.keywords} />
 
 				{/* <link rel="canonical" href="http://mysite.com/example" /> */}
 			</Helmet>
@@ -36,7 +38,7 @@ export default () => {
 							return (
 								<div className="article-list" key={index} onClick={() => routerPush(item)}>
 									<div className="article-list-left">
-										<img src={`${info.cdn}/md-img/${item.photos ? item.photos : 'js'}.png`} alt="" />
+										<img src={`${info.cdn}/md-img/${item.photos ? item.photos : 'js'}.png`} alt={seo.imgAll} />
 									</div>
 									<div className="article-list-right">
 										<div className="article-list-date">

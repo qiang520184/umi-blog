@@ -15,6 +15,7 @@ export default defineConfig({
     skipModelValidate: false,
   },
   alias: {
+    seo: '@/seo',
     common: '@/common',
     static: '@/static',
     components: '@/components',

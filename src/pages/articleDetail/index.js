@@ -5,6 +5,7 @@ import './index.less';
 import Markdown from 'components/markdown';
 import { articleData, info } from 'config/user/index';
 import { Helmet } from 'react-helmet';
+import seo from 'seo';
 
 // import content from '../../source/git知多少.md';
 // function importContent(title) {
@@ -45,9 +46,9 @@ export default () => {
     <div className="article-detail">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{info.title}</title>
-        <meta name="description" content={`付大强,${info.title}`} />
-        <meta name="keywords" content={`付大强,${info.title}`} />
+        <title>{info.title ? info.title : seo.title}</title>
+        <meta name="description" content={`${seo.description},${info.title}`} />
+        <meta name="keywords" content={`${seo.keywords},${info.title}`} />
       </Helmet>
       <div className="markdown-wrap">
         <div className="markdown-wrap-title">{info.title}</div>
