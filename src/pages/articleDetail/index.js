@@ -31,8 +31,8 @@ export default () => {
       if (item) {
         let [key, value] = item.split(':');
         console.log(item, key, value, 'key, value')
-        if (key && key.trim()) {
-          info[key] = value.trim();
+        if (key && key?.trim()) {
+          info[key] = value?.trim();
         }
       }
     });

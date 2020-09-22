@@ -265,6 +265,17 @@
 			"description": "",
 			"photos": ""
 		},
+		"1600757644000": {
+			"title": "笔试代码题",
+			"categories": "技术",
+			"path": "/articleDetail",
+			"comments": "true",
+			"photos": "javascript",
+			"date": 1600757644000,
+			"tags": "",
+			"keywords": "",
+			"description": "某滴面试手写题"
+		},
 		"1555756264000": {
 			"title": "节流throttle",
 			"categories": "技术",
@@ -296,7 +307,7 @@
 			"date": 1555756324000,
 			"tags": "",
 			"keywords": "",
-			"description": ""
+			"description": "防抖debounce"
 		}
 	},
 	"生活": {},
