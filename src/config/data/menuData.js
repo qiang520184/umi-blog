@@ -59,6 +59,28 @@ export default [
 		]
 	},
 	{
+		title: '力扣',
+		path: '/leetcode',
+		icon: 'leetcode',
+		children: [
+			{
+				title: '简单',
+				path: '/leetcode/simple',
+				icon: 'read'
+			},
+			{
+				title: '中等',
+				path: '/leetcode/medium',
+				icon: 'customer-service'
+			},
+			{
+				title: '困难',
+				path: '/leetcode/difficult',
+				icon: 'picture'
+			}
+		]
+	},
+	{
 		title: '留言板',
 		path: '/comment',
 		icon: 'edit'
