@@ -25,7 +25,7 @@ export default () => {
 		<div className="home">
 			<Helmet>
 				<meta charSet="utf-8" />
-				<title>{seo.title}</title>
+				<title>{seo.title ? seo.title : '付大强'}</title>
 				<meta name="description" content={seo.description} />
 				<meta name="keywords" content={seo.keywords} />
 
